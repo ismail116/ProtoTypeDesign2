@@ -1,0 +1,759 @@
+@import url(myfonts.css);
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*=====================  Header  =============== */
+
+header {
+    width: 100%;
+    height: 650px;
+    /* background: #fb0; */
+    background: url(../img/b1.jpg) no-repeat center/cover fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+header .top-bar {
+    min-height: 50px;
+    /* margin: 3px 4px; */
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #000; */
+    /* border-bottom: 1.5px solid orange; */
+    /* box-shadow: 3px 3px 3px #fb0; */
+    overflow: hidden;
+}
+
+header .top-bar .logo {
+    margin-left: 60px;
+    width: 100px;
+    line-height: 33px;
+    color: #fff;
+    font-size: 26px;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* header .top-bar .logo img {
+     width: 100px;
+     height: 60px;
+    /*font-size: 20px;
+    color: #fff;
+} */
+
+header nav {
+    width: 600px;
+}
+
+header .top-bar ul li {
+    /* list-style: none; */
+    display: inline-block;
+    line-height: 2 0px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+header .top-bar ul li:last-child {
+    margin-right: 0;
+}
+
+header .top-bar ul li a {
+    /* text-decoration: none; */
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+/* header .top-bar ul li.active {
+    background: #240e5f;
+    padding: 8px;
+}
+
+header .top-bar ul li.active a {
+    color: #fff;
+} */
+
+header .top-bar ul li:hover {
+    /* background: #240e5f; */
+    background: #fc0;
+}
+
+header .top-bar ul li:hover a {
+    color: #000;
+}
+
+header .banner1 {
+    width: 350px;
+    height: 140px;
+    position: absolute;
+    left: 250px;
+    top: 300px;
+    border: 4px solid #f90;
+}
+
+header .banner2 {
+    width: 340px;
+    height: 120px;
+    position: absolute;
+    left: 340px;
+    top: 390px;
+    /* border: 4px solid #f90; */
+    background: #fff;
+    /* text-align: center; */
+    line-height: 40px;
+    opacity: 85%;
+}
+
+header .banner2 .text-box {
+    margin: 15px 30px;
+}
+
+header .banner2 span {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+header .banner2 h1 {
+    /* text-align: center; */
+    /* font-size: 23px; */
+    color: #0fc;
+    font-family: Arial;
+}
+
+
+/*=====================  Cards Section  =============== */
+
+#cards {
+    width: 100%;
+    height: 320px;
+    margin-top: 50px;
+}
+
+#cards .card-container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    perspective: 600px;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+#cards .card-container .card {
+    width: 200px;
+    height: 320px;
+    /* display: flex;
+    justify-content: space-between; */
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transform-style: preserve-3d;
+    /*  transform-style : flat ( default ) */
+}
+
+.card-container .card .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: url(../img/manik-rathee-a8YV2C3yBMk-unsplash.jpg) no-repeat center/cover; */
+}
+
+.card-container .card:first-of-type .front {
+    background: url(../img/ab1.jpg) no-repeat center/cover;
+}
+
+.card-container .card:nth-of-type(2) .front {
+    background: url(../img/ab2.jpg) no-repeat center/cover;
+}
+
+.card-container .card:nth-of-type(3) .front {
+    background: url(../img/ab3.jpg) no-repeat center/cover;
+}
+
+.card-container .card:nth-of-type(4) .front {
+    background: url(../img/ab4.jpg) no-repeat center/cover;
+}
+
+.card-container .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 10px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-container .card:hover {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+
+/*=====================  Find Section   =============== */
+
+#find {
+    width: 100%;
+    height: 350px;
+    background: url(../img/b3.jpg) no-repeat center/cover;
+    overflow: hidden;
+    margin: 50px 0;
+    text-align: center;
+}
+
+#find .txtbox {
+    margin-top: 50px;
+}
+
+#find span {
+    font-size: 16px;
+    font-style: italic;
+    font-family: Arial;
+    /* margin-bottom: 10px; */
+    color: #fff;
+}
+
+#find h1 {
+    font-family: Arial;
+    font-weight: normal;
+    color: #f90;
+    margin-top: 8px;
+}
+
+#find .type-container {
+    width: 800px;
+    height: 100%;
+    margin: 100px auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+#find .type-container .type {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#find .type-container .type h4 {
+    font-family: Arial;
+    color: #f90;
+    margin-top: 60px;
+}
+
+
+/*=====================  Blog Section   =============== */
+
+#blog {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    overflow: hidden;
+}
+
+#blog .pic {
+    width: 50%;
+    height: 100%;
+    background: url(../img/ab4.jpg) no-repeat center/cover;
+}
+
+#blog .txt-box1 {
+    width: 50%;
+    height: 100%;
+    background: #ccc;
+    opacity: 85%;
+}
+
+#blog .txt-box1 .txt {
+    width: 80%;
+    margin: 80px auto;
+}
+
+#blog .txt-box1 .txt h1 {
+    color: #0fa;
+    margin-bottom: 20px;
+    font-family: Arial;
+}
+
+#blog .txt-box1 .txt p {
+    color: gray;
+    font-size: 15px;
+}
+
+#blog .blog-box {
+    width: 280px;
+    height: 140px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    border: 4px solid #0fc;
+}
+
+
+/*=====================  Blog2 Section   =============== */
+
+#blog2 {
+    width: 100%;
+    height: 300px;
+    /* position: relative; */
+    display: flex;
+    flex-flow: wrap;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+#blog2 .pic1 {
+    width: 50%;
+    height: 100%;
+    background: url(../img/b4.jpg) no-repeat center/cover;
+}
+
+#blog2 .txt-box1 {
+    width: 50%;
+    height: 100%;
+    background: #cca;
+}
+
+#blog2 .txt {
+    width: 80%;
+    margin: 80px auto;
+    opacity: 80%;
+}
+
+#blog2 .txt h1 {
+    color: #0fc;
+    line-height: 40px;
+    font-family: Arial;
+}
+
+#blog2 .txt p {
+    color: gray;
+    font-size: 15px;
+}
+
+#blog2 .txt button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background: #001;
+    color: #fff;
+    border: none;
+}
+
+
+/*=====================  Blog3 Section   =============== */
+
+#blog3 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: wrap;
+    overflow: hidden;
+    /* margin-top: 50px; */
+}
+
+#blog3 .pic1 {
+    width: 50%;
+    height: 100%;
+    background: url(../img/g6.jpg) no-repeat center/cover;
+}
+
+#blog3 .txt-box1 {
+    width: 50%;
+    height: 100%;
+    background: #cca;
+}
+
+#blog3 .txt {
+    width: 80%;
+    margin: 80px auto;
+    opacity: 80%;
+}
+
+#blog3 .txt h1 {
+    color: #0fc;
+    line-height: 40px;
+    font-family: Arial;
+}
+
+#blog3 .txt p {
+    color: gray;
+    font-size: 15px;
+}
+
+#blog3 .txt button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background: #001;
+    color: #fff;
+    border: none;
+}
+
+
+/*=====================  Gallery Section   =============== */
+
+#gallery {
+    width: 100%;
+    height: 460px;
+    /* min-height: 450px; */
+    margin: 30px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+#gallery span {
+    font-family: cute;
+    margin-bottom: 10px;
+}
+
+#gallery h1 {
+    font-family: Arial;
+    font-weight: normal;
+    color: #f90;
+    margin-top: 8px;
+}
+
+#gallery .img-container {
+    width: 730px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#gallery .img-container .img-box1 {
+    width: 350px;
+    height: 370px;
+    /* margin: auto; */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+#gallery .img-container .img-box1 .card1 {
+    width: 170px;
+    height: 190px;
+    background: url(../img/ab1.jpg) no-repeat center/cover;
+}
+
+#gallery .img-container .img-box1 .card2 {
+    width: 170px;
+    height: 190px;
+    background: url(../img/ab3.jpg) no-repeat center/cover;
+}
+
+#gallery .img-container .img-box1 .card3 {
+    width: 350px;
+    height: 150px;
+    background: url(../img/g6.jpg) no-repeat center/cover;
+}
+
+
+/*=====================  Booking Section   =============== */
+
+#booking {
+    width: 100%;
+    height: 350px;
+    /* min-height: 450px; */
+    margin: 30px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+#booking span {
+    font-family: cute;
+    margin-bottom: 10px;
+}
+
+#booking h1 {
+    font-family: Arial;
+    font-weight: normal;
+    color: #f90;
+    margin-top: 8px;
+}
+
+#booking .figure-container {
+    width: 950px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#booking .figure-container figure {
+    width: 220px;
+}
+
+#booking .figure-container figure img {
+    width: 220px;
+    height: 150px;
+}
+
+#booking .figure-container figure figcaption {
+    text-align: left;
+    /* line-height: 30px; */
+}
+
+#booking .figure-container figure figcaption h4 {
+    font-family: Arial;
+    font-weight: normal;
+    color: #f90;
+    margin: 10px 0;
+}
+
+#booking .figure-container figure figcaption p {
+    color: gray;
+    font-size: 15px;
+}
+
+
+/*=====================  Subscribe Section   =============== */
+
+#subscribe {
+    width: 100%;
+    height: 300px;
+    background: url(../img/b4.jpg) no-repeat center/cover;
+    overflow: hidden;
+    margin: 50px 0;
+    text-align: center;
+}
+
+#subscribe .txt-box {
+    margin-top: 40px;
+}
+
+#subscribe .txt-box span {
+    font-size: 18px;
+    font-style: italic;
+    font-family: arial;
+    /* margin-bottom: 10px; */
+    color: #fff;
+}
+
+#subscribe .txt-box h1 {
+    font-family: Arial;
+    font-weight: normal;
+    color: #f90;
+    margin-top: 8px;
+}
+
+#subscribe .form-search {
+    width: 390px;
+    height: 60px;
+    margin: 50px auto;
+    background: #fff;
+    opacity: 70%;
+}
+
+#subscribe .form-search form {
+    width: 350px;
+    height: 140px;
+    margin: 20px auto;
+}
+
+#subscribe .form-search form input {
+    width: 220px;
+    height: 30px;
+    border: 2.5px solid #cca;
+    background: #fff;
+    margin: 15px auto;
+}
+
+#subscribe .form-search form button {
+    width: 120px;
+    padding: 8px 10px;
+    margin-left: 5px;
+    border: none;
+    font-weight: bold;
+    background: #0f9;
+    color: #fff;
+}
+
+
+/*=====================  Contact Section   =============== */
+
+#contact {
+    width: 100%;
+    height: 400px;
+    /* min-height: 450px; */
+    margin: 10px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+#contact span {
+    font-family: cute;
+    margin-bottom: 10px;
+}
+
+#contact h1 {
+    font-family: Arial;
+    font-weight: normal;
+    color: #f90;
+    margin-top: 8px;
+}
+
+#contact .contact-container {
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#contact .contact-container .mymap {
+    width: 440px;
+    height: 275px;
+}
+
+#contact .contact-container .form1 {
+    width: 380px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+#contact .contact-container .form1 form {
+    width: 400px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#contact .contact-container .form1 form input {
+    width: 180px;
+    height: 30px;
+    border: 2.5px solid #cca;
+    background: #fff;
+}
+
+#contact .contact-container .form2 {
+    width: 380px;
+}
+
+#contact .contact-container .form2 form {
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+#contact .contact-container .form2 form input {
+    width: 380px;
+    /* height: 150px; */
+    padding-bottom: 115px;
+    border: 2.5px solid #cca;
+    background: #fff;
+}
+
+#contact .contact-container .form2 button {
+    width: 380px;
+    padding: 8px 10px;
+    border: none;
+    font-weight: bold;
+    background: #0f9;
+    color: #fff;
+}
+
+
+/*=====================  Footer Section   =============== */
+
+#footer1 {
+    width: 100%;
+    height: 200px;
+    background: #011;
+    text-align: center;
+    overflow: hidden;
+}
+
+#footer1 .contact-box {
+    width: 15%;
+    margin: 50px auto 25px auto;
+}
+
+#footer1 .contact-box span {
+    font-size: 15px;
+    font-family: Arial;
+    color: #fff;
+}
+
+#footer1 .contact-box p {
+    font-size: 13px;
+    font-family: arial;
+    color: gray;
+}
+
+#footer1 .arrow {
+    text-align: center;
+}
+
+#footer1 .arrow a img {
+    width: 25px;
+    background: #ccc;
+    border: 3px solid #ccc;
+    /*margin-top: 10px;
+    */
+    border-radius: 5px;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/*=====================  Footer  =============== */
+
+footer {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    background: #000;
+}
+
+footer marquee {
+    padding-top: 10px;
+    color: #ccc;
+}
